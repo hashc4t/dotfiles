@@ -1,5 +1,5 @@
-# Umar's config for the ZoomerShell
-# Based on lukesmith's cfg file.
+# Umar's Config file for ZoomerSHell
+# Based on Luke Smith's cfg file
 
 # Enable colors and change prompt:
 autoload -U colors && colors    # Load colors
@@ -82,18 +82,11 @@ bindkey '^e' edit-command-line
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 
-#Android SDK home
-export ANDROID_HOME=/usr/lib/Android
-export PATH=$ANDROID_HOME/tools:$PATH
-export PATH=$ANDROID_HOME/tools/bin:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
-#Android SDK root
-export ANDROID_SDK_ROOT=/usr/lib/Android
-export PATH=$ANDROID_SDK_ROOT:$PATH
 #libcs50
 export LIBRARY_PATH=/usr/local/lib
 export C_INCLUDE_PATH=/usr/local/include
 export LD_LIBRARY_PATH=/usr/local/lib
+
 #libcs50 aliases
 alias CC="clang"
 alias CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
