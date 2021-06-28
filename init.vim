@@ -4,8 +4,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set hlsearch
-set number relativenumber
 set nohlsearch
+set number relativenumber
 set incsearch
 set scrolloff=8
 set termguicolors     " enable true colors support
